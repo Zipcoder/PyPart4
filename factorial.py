@@ -1,11 +1,7 @@
 def factorial(x):
-    if x >= 0:
-        answer = 1
-        for x in range (1,x+1):
-            answer = answer * x
-            print(answer)
+    if x > 0:
+        return x * factorial(x-1)
     else:
-        return print('error')
-    return answer
+        return 1
 
-print(factorial(-3))
+    
